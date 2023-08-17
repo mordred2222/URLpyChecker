@@ -3,7 +3,7 @@ import requests
 import time
 
 # Path to the excel file 
-excelFilePath = "C:\\BRG\\URL.xlsx"
+excelFilePath = "C:\\URLChecker\\URL.xlsx"
 
 # Name of excel sheet tab
 worksheetName = "tocheck"
