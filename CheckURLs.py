@@ -28,7 +28,7 @@ for row in worksheet.iter_rows(min_row=2, values_only=True):  # Commence à la d
     result = "Accessible" if 200 <= response.status_code < 400 else "Erreur "+str(response.status_code)
 
     load_time=end_time - start_time
-    checkedWorksheet.append([url, resultf"{load_time:.4f} secondes"]])
+    checkedWorksheet.append([url, result, f"{load_time:.4f} secondes"]])
 
 # Sauvegarder les modifications dans le fichier Excel
 workbook.save(excelFilePath)
